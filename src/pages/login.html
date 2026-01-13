@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sistema de Gestão de Inscrições Escolares</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="shortcut icon" href="../assets/img/favicon1.png" type="image/x-icon">
+  <link rel="stylesheet" href="../global/global.css">
+<link rel="stylesheet" href="../styles/loging.css">
+</head>
+<body>
+   <header>
+        <div class="img-logo">
+            <a href="../../index.html">
+                <img src="../assets/img/favicon1.png" alt="Logo do IPIAL" width="50px" height="40px">
+            </a>
+            <a href="../../index.html">IPIAL-26</a>
+        </div>
+
+        <nav id="links">
+            <a href="../../index.html">Home</a>
+            <a href="./cadastro.html">Cadastro</a>
+            <a href="login.html">Login</a>
+        </nav>
+
+        <div id="burguer">
+            <button id="boto">
+                <svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"/></svg>
+            </button>
+        </div>
+    </header>
+<!-- LOGIN PAGE -->
+<div id="loginPage" class="login-container">
+  <div class="login-box">
+    <h2>Acesso ao Sistema</h2>
+    
+    <form id="loginForm">
+      <div class="form-group">
+        <input id="user" type="text" placeholder="Utilizador" required />
+      </div>
+      <div class="form-group">
+        <input id="pass" type="password" placeholder="Palavra-passe" required />
+      </div>
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+</div>
+
+<!-- ADMIN PANEL -->
+<div id="adminPanel" class="admin-panel hidden">
+  <aside class="sidebar">
+    <h3>Gestão Escolar</h3>
+    <nav>
+      <button type="button" class="active" id="btnDashboard">Dashboard</button>
+      <button type="button" id="btnCandidatos">Candidatos</button>
+      <button type="button" id="btnRelatorios">Relatórios</button>
+      <button type="button" class="logout" id="btnLogoutAdmin">Sair</button>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <!-- DASHBOARD -->
+    <section id="dashboard">
+      <h1>Dashboard Geral</h1>
+
+      <div class="cards-grid">
+        <div class="card">
+          <p>Total de Candidatos</p>
+          <h2 id="total">0</h2>
+        </div>
+        <div class="card aprovado">
+          <p>Aprovados</p>
+          <h2 id="aprovados">0</h2>
+        </div>
+        <div class="card pendente">
+          <p>Pendentes</p>
+          <h2 id="pendentes">0</h2>
+        </div>
+        <div class="card reprovado">
+          <p>Reprovados</p>
+          <h2 id="reprovados">0</h2>
+        </div>
+      </div>
+
+      <div class="resumos-grid">
+        <div class="resumo-card">
+          <h3>Resumo por Curso</h3>
+          <ul id="resumoCursos">
+            <li>Nenhum candidato registado</li>
+          </ul>
+        </div>
+        <div class="resumo-card">
+          <h3>Atividades Recentes</h3>
+          <ul id="atividades">
+            <li>✔ Sistema iniciado</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CANDIDATOS -->
+    <section id="candidatos" class="hidden">
+      <h1>Gestão de Candidatos</h1>
+
+      <div class="form-section">
+        <h2>Novo Candidato</h2>
+        <div class="form-grid">
+          <input id="nome" type="text" placeholder="Nome Completo" />
+          <input id="idade" type="number" placeholder="Idade" />
+          <input id="bi" type="text" placeholder="BI / Passaporte" />
+          <input id="contacto" type="text" placeholder="Contacto" />
+          <input id="curso" type="text" placeholder="Curso Pretendido" />
+          <select id="estado">
+            <option value="Pendente">Pendente</option>
+            <option value="Aprovado">Aprovado</option>
+            <option value="Reprovado">Reprovado</option>
+          </select>
+        </div>
+        <button type="button" class="btn" id="btnAddCandidato">Registar</button>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Curso</th>
+              <th>Código</th>
+              <th>Estado</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="lista"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- RELATÓRIOS -->
+    <section id="relatorios" class="hidden">
+      <h1>Relatórios de Candidatos</h1>
+
+      <div class="filter-section">
+        <h2>Filtro de Relatórios</h2>
+        <div class="filter-grid">
+          <select id="filtroCurso">
+            <option value="">Todos os Cursos</option>
+          </select>
+          <select id="filtroEstado">
+            <option value="">Todos os Estados</option>
+            <option value="Aprovado">Aprovados</option>
+            <option value="Reprovado">Reprovados</option>
+            <option value="Pendente">Pendentes</option>
+          </select>
+          <button type="button" class="btn" id="btnAplicarFiltro">Aplicar</button>
+          <button type="button" class="btn success" id="btnExportarPDF">Exportar PDF</button>
+        </div>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Nome Completo</th>
+              <th>Idade</th>
+              <th>BI / Passaporte</th>
+              <th>Contacto</th>
+              <th>Curso</th>
+              <th>Código</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody id="tabelaRelatorio"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- STUDENT PANEL -->
+<div id="studentPanel" class="student-container hidden">
+  <div class="student-card">
+    <h1>Resultado da Candidatura</h1>
+    
+    <div class="search-group">
+      <input id="studentCode" type="text" placeholder="Insira o seu código de acesso" />
+      <button type="button" class="btn" id="btnSearchStudent">Pesquisar Resultado</button>
+    </div>
+
+    <div id="studentResults" class="student-results hidden">
+      <div class="result-row">
+        <span class="result-label">Nome:</span>
+        <span class="result-value" id="sNome">-</span>
+      </div>
+      <div class="result-row">
+        <span class="result-label">BI/Passaporte:</span>
+        <span class="result-value" id="sBI">-</span>
+      </div>
+      <div class="result-row">
+        <span class="result-label">Curso:</span>
+        <span class="result-value" id="sCurso">-</span>
+      </div>
+      <div class="result-row">
+        <span class="result-label">Média:</span>
+        <span class="result-value" id="sMedia">-</span>
+      </div>
+      <div class="result-row">
+        <span class="result-label">Status:</span>
+        <span class="result-value" id="sStatus">-</span>
+      </div>
+    </div>
+
+    <div id="noResults" class="no-results">
+      Digite o seu código de acesso para ver o resultado
+    </div>
+
+    <button type="button" class="logout-btn" id="btnLogoutStudent">Sair</button>
+  </div>
+</div>
+<script src="../javascript/script.js"></script>
+<script src="../javascript/adm.js"></script>
+</body>
+</html>

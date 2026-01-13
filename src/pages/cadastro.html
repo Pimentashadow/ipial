@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TelaCadastro</title>
+    <link rel="shortcut icon" href="/src/assets/img/favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="../global/global.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/cadastro.css">
+</head>
+
+<body>
+    <header>
+        <div class="img-logo">
+            <a href="../../index.html">
+                <img src="../assets/img/favicon1.png" alt="Logo do IPIAL" width="50px" height="40px">
+            </a>
+            <a href="../../index.html">IPIAL-26</a>
+        </div>
+
+        <nav id="links">
+            <a href="../../index.html">Home</a>
+            <a href="./login.html">Login</a>
+        </nav>
+
+        <div id="burguer">
+            <button id="boto">
+                <svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+    <!-- fim do header -->
+    <!-- Informações sobre os requisitos -->
+
+    <!-- Inicio do cadastro -->
+    <section class="contcad">
+        <div class="containerform">
+            <form>
+                <div id="especifi">
+
+                    <div class="requisitos">
+                        <h1 class="chane">Requisitos para inscrição</h1>
+                        <p class="chane">
+                            Para cadastrar-se e matricular-se no IPIAL, é necessário comprir com alguns requisitos
+                            como:<br>
+                        </p>
+                        <ul>
+                            <li class="chane"> O aluno deve ter uma idade minima de 15 anos.</li>
+                            <li class="chane">Ter o primeiro ciclo do ensino secundário concluído.</li>
+                            <li class="chane">Ter em mãos a cópia do certificado de conclusão da 9ª classe</li>
+                            <li class="chane">Fazer o pagamento do Pagamento do Rupi e entrga do comprovativo de
+                                pagamento.
+                                <ul>
+                                    <li class="chane">
+                                        O pagamento pode ser feito em um banco de sua preferência.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>Ainda não pagou o rupi? <a href="../pages/rupi.html">Pagar</a></p>
+                    </div>
+                </div>
+                <div>
+
+                    <div class="cad">
+                        <h1>Cadastro</h1>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="text">Digite o seu Nome Completo</label><br>
+                        <input type="text" id="text" name="text" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="text">Digite o seu E-mail</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="tel">Digite o seu número de telefone</label><br>
+                        <input type="tel" id="tel" name="tel" placeholder="(+244)">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="text">Digite o seu nº do comprovativo</label><br>
+                        <input type="text" id="rupe" name="rupe" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="date">Data de nascimento</label><br>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="genero">
+                        <div>
+                            <input type="radio" id="gender" name="gender" required>
+                            <label class="generos" for="gender">Feminino</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="gender" name="gender" required>
+                            <label class="generos" for="gender">Masculino</label>
+                        </div>
+                    </div>
+
+                    <div class="sel">
+                        <select name="choice" id="choice" class="choice" required>
+                            <option class="opt1" value="">Escolha o curso</option>
+                            <option class="opt1" value="Informática">Informática</option>
+                            <option class="opt1" value="Construção civil">Construção civil</option>
+                            <option class="opt1" value="Electricidade">Electricidade</option>
+                            <option class="opt1" value="Electrónica e Telecomunicações">Electrónica e Telecomunicações
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="ficheiro">
+
+                        <label for="file" id="file1" class="label1">Enviar o BI</label>
+                        <input type="file" id="file2" name="file" required>
+
+                        <label for="file" class="label1">Enviar o certificado</label>
+                        <input type="file" id="file" name="file" required>
+                    </div>
+
+                    <div class="button-cadastro">
+                        <button type="submit" id="a1">Entrar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+
+        <div class="line-full"></div>
+
+        <div class="footer-container">
+
+            <a class="footer-content-first" href="../index.html">
+                <div>
+                    <img src="/src/assets/img/favicon1.png" alt="" width="70px">
+                </div>
+                <h2>IPIAL-26</h2>
+            </a>
+
+            <div class="footer-contens">
+                <!-- redes sociais -->
+                <div class="footer-content ">
+                    <h1>Siga-nos</h1>
+
+                    <div class="icones">
+                        <li>
+                            <img src="/src/assets/img/whatzapp-icon.png" alt="whatzapp-icon" width="40px" />
+                        </li>
+                        <li>
+                            <img src="/src/assets/img/facebook-icon.png" alt="facebook-icon" width="40px" />
+                        </li>
+                        <li>
+                            <img src="/src/assets/img/linkedlin-icon.png" alt="linkedlin-icon" width="40px" />
+                        </li>
+                    </div>
+                </div>
+                <div class="footer-content navigation">
+                    <ul>
+                        <h1>Atalhos</h1>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/src/pages/resultado.html">Resultdo</a></li>
+                        <li><a href="/src/pages/login.html">Login</a></li>
+                        <li><a href="/src/pages/cadastro.html">Cadastrar</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-content  footer-content-about">
+                    <div class="about-content-aling">
+                        <li>
+                            <img src="/src/assets/img/location-icon-2.png" alt="location-icon" width="16px" />
+                            <p>Angola Luanda, Maianga</p>
+                        </li>
+                        <li>
+                            <img src="/src/assets/img/phone-caling-icon.png" alt="phone-icon" width="20px" />
+                            <p>(+244) 933 344 900</p>
+                        </li>
+                        <li>
+                            <img src="/src/assets/img/email-icon.png" alt="email-icon" width="24px" />
+                            <p>geral_ipial26@ipial.edu.com</p>
+                        </li>
+                        <div>&copy; Copyright 2026 IPIAL-26</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="../javascript/script.js"></script>
+</body>
+
+</html>
