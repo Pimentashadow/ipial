@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TelaCadastro</title>
-    <link rel="shortcut icon" href="/src/assets/img/favicon1.png" type="image/x-icon">
     <link rel="stylesheet" href="../global/global.css">
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/cadastro.css">
@@ -13,25 +12,20 @@
 
 <body>
     <header>
-        <div class="img-logo">
-            <a href="../../index.html">
-                <img src="../assets/img/favicon1.png" alt="Logo do IPIAL" width="50px" height="40px">
-            </a>
-            <a href="../../index.html">IPIAL-26</a>
-        </div>
-
-        <nav id="links">
-            <a href="../../index.html">Home</a>
-            <a href="./login.html">Login</a>
+        <nav>
+            <div class="img-logo">
+                <a href="../../index.html">ALDA LARA</a>
+            </div>
+            <ul id="links">
+                <a href="../../index.html">Home</a>
+                <a href="./cursos.html">Cursos</a>
+                <a href="./cadastro.html">Cadastro</a>
+                <a href="./login.html">Login</a>
+            </ul>
+            <div id="menu-hamburguer">
+                <img src="../icones/menu-hamburguer.png" alt="menu-hamburguer" width="32px">
+            </div>
         </nav>
-
-        <div id="burguer">
-            <button id="boto">
-                <svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z" />
-                </svg>
-            </button>
-        </div>
     </header>
     <!-- fim do header -->
     <!-- Informações sobre os requisitos -->
@@ -135,67 +129,38 @@
         </div>
     </section>
     <footer>
-
-        <div class="line-full"></div>
-
         <div class="footer-container">
-
-            <a class="footer-content-first" href="../index.html">
-                <div>
-                    <img src="/src/assets/img/favicon1.png" alt="" width="70px">
-                </div>
-                <h2>IPIAL-26</h2>
-            </a>
-
-            <div class="footer-contens">
-                <!-- redes sociais -->
-                <div class="footer-content ">
-                    <h1>Siga-nos</h1>
-
-                    <div class="icones">
-                        <li>
-                            <img src="/src/assets/img/whatzapp-icon.png" alt="whatzapp-icon" width="40px" />
-                        </li>
-                        <li>
-                            <img src="/src/assets/img/facebook-icon.png" alt="facebook-icon" width="40px" />
-                        </li>
-                        <li>
-                            <img src="/src/assets/img/linkedlin-icon.png" alt="linkedlin-icon" width="40px" />
-                        </li>
-                    </div>
-                </div>
-                <div class="footer-content navigation">
-                    <ul>
-                        <h1>Atalhos</h1>
-                        <li><a href="/index.html">Home</a></li>
-                        <li><a href="/src/pages/resultado.html">Resultdo</a></li>
-                        <li><a href="/src/pages/login.html">Login</a></li>
-                        <li><a href="/src/pages/cadastro.html">Cadastrar</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-content  footer-content-about">
-                    <div class="about-content-aling">
-                        <li>
-                            <img src="/src/assets/img/location-icon-2.png" alt="location-icon" width="16px" />
-                            <p>Angola Luanda, Maianga</p>
-                        </li>
-                        <li>
-                            <img src="/src/assets/img/phone-caling-icon.png" alt="phone-icon" width="20px" />
-                            <p>(+244) 933 344 900</p>
-                        </li>
-                        <li>
-                            <img src="/src/assets/img/email-icon.png" alt="email-icon" width="24px" />
-                            <p>geral_ipial26@ipial.edu.com</p>
-                        </li>
-                        <div>&copy; Copyright 2026 IPIAL-26</div>
-                    </div>
-                </div>
+            <div class="menus">
+                <h1>Menus</h1>
+                <a href="../../index.html">Home</a>
+                <a href="./resultado.html">Resultado</a>
+                <a href="./login.html">Login</a>
+                <a href="./login.html">Cadastrar</a>
             </div>
 
+            <div class="contato">
+                <h1>Contactos</h1>
+                <li>
+                    <img src="../icones/localizacao.png" alt="localizacao" width="24px" />
+                    <p>Luanda</p>
+                </li>
+                <li>
+                    <img src="../icones/telefone.png" alt="phone-icon" width="24px" />
+                    <p>955 333 222 / 933 222 111</p>
+                </li>
+                <li>
+                    <img src="../icones/email.png" alt="email-icon" width="24px" />
+                    <p>aldalara@gmail.com</p>
+                </li>
+            </div>
         </div>
+
+        <div class="copy">
+            <p>&copy; ALDA LARA 2026</p>
+        </div>
+
     </footer>
-    <script src="../javascript/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
