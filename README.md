@@ -1,4 +1,4 @@
-# IPIAL-26
+# IPIAL - ALDA LARA
 
 ## 🌍 Language / Idioma
 - 🇺🇸 [English](#english)
@@ -6,7 +6,7 @@
 
 ---
 ## English
-**IPIAL-26** is a web-based school system developed to facilitate access for new students through a fully online enrollment process, reducing bureaucracy and making admissions faster, simpler, and more accessible.
+**IPIAL - ALDA LARA**  is a web-based school system developed to facilitate access for new students through a fully online enrollment process, reducing bureaucracy and making admissions faster, simpler, and more accessible.
 
 ## 🎯 Objective
 To digitalize and simplify the school enrollment process, allowing new students to register remotely in an organized and efficient way.
@@ -58,7 +58,7 @@ To digitalize and simplify the school enrollment process, allowing new students 
 
 # Português
 
-O **IPIAL-26** é um sistema escolar web desenvolvido para facilitar o acesso de novos alunos à escola por meio de um processo de inscrição totalmente online, reduzindo a burocracia e tornando a admissão mais rápida, simples e acessível.
+O **IPIAL - ALDA LARA**  é um sistema escolar web desenvolvido para facilitar o acesso de novos alunos à escola por meio de um processo de inscrição totalmente online, reduzindo a burocracia e tornando a admissão mais rápida, simples e acessível.
 
 ## 🎯 Objetivo
 Digitalizar e simplificar o processo de inscrição escolar, permitindo que novos alunos realizem o cadastro de forma remota, organizada e eficiente.
